@@ -25,11 +25,31 @@
     <br>
     Reason:<br>
     <input type="text" name="reason" value="">
+    <br>
+</form>
+<h2>Question 2</h2>
+<p>What is the most important factor when you are deciding which park to visit?</p>
+<form>
+    <input type="radio" name="factor" value="distance"> Distance
+    <input type="radio" name="factor" value="natural views"> Natural Views
+    <input type="radio" name="factor" value="wildlife"> Wildlife
+    <input type="radio" name="factor" value="culture"> Culture
+    <input type="radio" name="factor" value="weather"> Weather
+</form>
+<h2>Question 3</h2>
+<p>Do you think preserving national parks are important for human beings? And why?</p>
+
+<form>
+    <select>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <br>
+    Reason:<br>
+    <input type="text" name="reason" value="">
     <br><br>
     <input type="submit" value="Submit">
 </form>
-<h2>Question 2</h2>
-<p>What are the major factors when you are deciding which park to visit?</p>
 <p>This survey is used for research purpose only. All private information would be protected.</p>
 <?php
 include "inc/footer.inc"
