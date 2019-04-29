@@ -9,7 +9,7 @@
 
 </head>
 <body class="container">
-<h1>Register</h1>
+<h1>It's a page where only administrator has access to</h1>
 <nav class="navbar  navbar-expand-lg navbar-light bg-light">
     <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
@@ -18,17 +18,8 @@
         <li class="nav-item"><a class="nav-link" href="survey.php">Survey</a> </li>
     </ul>
 </nav>
-<form>
-    Username:<br>
-    <input type="text" name="username" value="">
-    <br>
-    Password:<br>
-    <input type="password" name="password" value="">
-    <br>
-    <button type="submit">Login</button>
-</form>
-
-
+<h2>Super cool content</h2>
+<p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
 
 
 <?php
