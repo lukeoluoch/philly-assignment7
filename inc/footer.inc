@@ -1,2 +1,4 @@
-<footer class="text-muted">CSC174 - Advanced Front-end Web Development </footer>
-<a href="login.php">Admin Control</a>
+<footer class="">
+	<div>CSC174 - Advanced Front-end Web Development</div>
+	<div><a href="login.php">Admin Control</a></div>
+</footer>
