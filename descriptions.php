@@ -10,7 +10,7 @@
     </ul>
 </nav> -->
 <main>
-<h2>Why Are National Parks Important</h2>
+<h2 class="top-header">Why Are National Parks Important</h2>
 <p>National parks protect the best of our natural heritage: stunning landscapes, extraordinary wildlife and majestic forests.Together with other protected areas they form the basis
     of our economic and social wellbeing, attract millions of visitors annually, and help to protect Australia’s unique wildlife by acting as a refuge for threatened species.
     Although their primary purpose is the protection of biodiversity, National Parks also deliver other invaluable economic, social,
@@ -47,8 +47,7 @@
     such as acting as natural buffers against extreme weather events, helping to control our climate, providing us with clean water,
     improving food security and serving as an important resource for the pharmaceutical industry.</p>
 </main>
-<?php
-include "inc/footer.inc"
-?>
+<?php include 'inc/scripts.inc'; ?>
+<?php include "inc/footer.inc" ?>
 </body>
 </html>

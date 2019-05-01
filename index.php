@@ -30,13 +30,13 @@
 	</div>
 
 </section>
-<main class="two-col">
+<main class="two-col buffer">
 	<article class="two-col1">
 	<!--    The bottom left of the z pattern-->
 	    <p>National parks protect the best of our natural heritage: stunning landscapes, extraordinary wildlife and majestic forests.Together with other protected areas they form the basis of our economic and social wellbeing.</p>
 	</article>
 	<!-- The bottom right of the z pattern-->
-	<div class="two-col2"><a href="survey.php"><div class="button-dif">Take this survey</div></a></div>
+	<div class="two-col2"><div class="button-dif buffer"><a href="survey.php">Take this survey</a></div></div>
 </main>
 
 <?php include 'inc/scripts.inc'; ?>

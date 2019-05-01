@@ -2,8 +2,8 @@
 /*******************
 imports
 ******************* */
-@import url('https://fonts.googleapis.com/css?family=Lalezar|Cutive+Mono|Special+Elite');
-
+/*@import url('https://fonts.googleapis.com/css?family=Lalezar|Cutive+Mono|Special+Elite');*/
+@import url('https://fonts.googleapis.com/css?family=Cabin|Londrina+Solid|Montserrat|Poppins');
 
 /* ****************
 Base styles : defaults for the website
@@ -22,11 +22,17 @@ p {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 50px;
+	color: #ffdaaa;
+}
+
+h1 a {
+	color: #ffdaaa;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 35px;
+	margin-bottom: 5px;
 }
 
 h3 {
@@ -50,7 +56,7 @@ img {
     display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	margin-top: 15px;
+  	/*margin-top: 15px;*/
 }
 
 blockquote {
@@ -74,6 +80,13 @@ body {
 	background-image: url(../images/bg4.jpg);
 }
 
+body, main, footer {
+	font-family: 'Cabin', sans-serif;
+}
+
+header, nav {
+	font-family: 'Londrina Solid', cursive;
+}
 
 /* *****************
 Layout styles : for the sections/areas
@@ -108,7 +121,12 @@ Layout styles : for the sections/areas
   	margin-top: 50px;
 }
 
-aside {
+header {
+	padding: 0px 0px 0px 25px;
+}
+
+nav {
+	padding: 0px 25px 0px 0px;
 	display: flex;
 	flex-direction: row;
 	/*flex-basis: 20px;*/
@@ -118,26 +136,22 @@ aside {
 	font-size: 20px;
 }
 
-section header {
-	/*margin-bottom: 20px;*/
-	/*margin-top: 65px;*/
-}
-
 header h1 {
 	padding-bottom: 0px;
 	/*margin-left: 20px;*/
-	font-size: 40px;
+	/*font-size: 40px;*/
 }
 
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	/*margin-top: 30px;*/
-    padding: 0;
+    padding-top: 20;
 	overflow: hidden;
 }
 
 nav li {
+	margin-top: 50px;
 	float: left;
 }
 
@@ -145,21 +159,29 @@ nav a {
 
 }
 
-header, aside, footer, main {
-	background-color: #bc8134;/*#4c2b00;*/
+header, nav {
+	background-color: #4c2b00;/*#4c2b00;*/
 	color: #ffdaaa;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0;
 }
 
-footer {
-	/*display: flex;*/
+footer, main {
+	background-color: #bc8134;/*#4c2b00;*/
+	color: #ffdaaa;
+	padding: 0px 40px 10px 40px;
 }
 
 footer a {
 	/*float: right;*/
 	color: #ffdaaa;
+}
+
+section img {
+	float: right;
+	display: block;
+	max-width: 240px;
+	/*max-height:95px;*/
+	width: auto;
+	height: auto;
 }
 
 /* *****************
@@ -194,11 +216,12 @@ h3 a{
 	letter-spacing: 2px;
 }
 
-.button {
+.button a {
 	border: 3px solid #e0c096;
 	padding: 30px 2px 30px 2px;
 	margin: 5px 3px 5px 3px;
 	border-radius: 6px;
+	/*background-color: #000000;*/
 	color: #ffdaaa;
 }
 
@@ -219,16 +242,25 @@ h3 a{
 }
 
 .buffer {
-	margin-bottom: 15px;
+	padding-top: 30px;
 }
 
-.button-dif {
+.button-dif a {
 	border: 3px solid #e0c096;
 	padding: 30px 2px 30px 2px;
 	margin: 5px 3px 5px 3px;
 	border-radius: 6px;
 	color: #ffdaaa;
 	background-color: #4c2b00;
+}
+
+.button-link a {
+	border: 3px solid #e0c096;
+	padding: 30px 2px 30px 2px;
+	margin: 5px 3px 5px 3px;
+	border-radius: 6px;
+	color: #ffdaaa;
+	background-color: #1a4416;
 }
 
 .preview {
@@ -254,6 +286,11 @@ h3 a{
 .two-col2 {
 	grid-column: 2 / 3;
 	padding: 0px;
+}
+
+.top-header {
+	margin-top: 0;
+	padding-top: 20px;
 }
 
 /*FORM - Adapted from form options for Pure by Yahoo!*/
@@ -320,11 +357,11 @@ h3 a{
 State styles
 ***************** */
 
-.button-imp:hover {
-	background-color: #f1f196;
+.button-dif a:hover {
+	background-color: #7d5d3b;
 }
 
-.button:hover {
+.button a:hover {
 	background-color: #573A1C;
 }
 
@@ -332,8 +369,12 @@ State styles
 	color: brown;
 }
 
-header h1:hover {
+header h1 a:hover {
 	color: #7d5d3b;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
 
 /*THEME & MISC*/
@@ -353,9 +394,13 @@ header h1:hover {
 	color: #F6EDE2;
 }
 
-nav li:hover {
-	background-color: #7d5d3b;
+.is-current {
+	text-decoration: underline;
 }
+
+/*nav li:hover {
+	background-color: #7d5d3b;
+}*/
 
 /** {
 	border-style: solid;
