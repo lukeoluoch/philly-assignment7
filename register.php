@@ -100,7 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <?php include 'inc/html-top.inc'; ?>
 <main>
-<h2>Please Register:</h2>
+<h2 class="top-header">Please Register:</h2>
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">

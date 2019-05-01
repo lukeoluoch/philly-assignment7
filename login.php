@@ -100,7 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
  include 'inc/html-top.inc'; ?>
 <main>
-<h2>Please Login:</h2>
+<h2 class="top-header">Please Login:</h2>
 <!-- <form>
     Username:<br>
     <input type="text" name="username" value="">

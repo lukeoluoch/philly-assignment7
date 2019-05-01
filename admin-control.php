@@ -14,36 +14,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta lang="en">
-    <title>National Park Survey</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="coin-slider-styles.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-
-<body class="container">
-<!--    The top left of the z pattern-->
-<div class="row">
-	<header>
-		<h1>National Park Survey</h1>
-	</header>
-	<!--    The top right of the z pattern-->
-	<aside>
-		<nav class="">
-		    <ul class="">
-		        <a class="" href="index.php"><li class="button">Home</li></a>
-		        <a class="" href="descriptions.php"><li class="button">Description</li></a>
-		        <a class="" href="national-park.php"><li class="button">National Parks</li></a>
-		        <a class="" href="survey.php"><li class="button-dif">Survey</li></a>
-		    </ul>
-		</nav>
-	</aside>
-</div>
+<?php include 'inc/html-top.inc'; ?>
 
 
 <head>
