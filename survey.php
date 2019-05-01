@@ -1,8 +1,9 @@
+
 <?php include 'inc/html-top.inc'; ?>
 <main>
 <h2 class="top-header">Question 1</h2>
 <p>What national park do you like the most and why?</p>
-<form>
+<form action="thank-you.php" method="post">
     Favourite park:<br>
     <input type="text" name="park-name" value="">
     <br>
@@ -28,7 +29,7 @@
     </select>
     <br>
     Reason:<br>
-    <input type="text" name="reason" value="">
+    <input type="text" name="preserve-reason" value="">
     <br><br>
 
     <h2>Personal information</h2>
