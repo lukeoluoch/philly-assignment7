@@ -1,11 +1,18 @@
 <?php
-
+/*
+ * DB Class
+ * This class is used for database related (connect, insert, update, and delete) operations
+ * @author    CodexWorld.com
+ * @url        http://www.codexworld.com
+ * @license    http://www.codexworld.com/license
+ */
 class DB{
     private $dbHost     = "localhost";
     private $dbUsername = "urcscon3_philly";
     private $dbPassword = "coffee1N";
     private $dbName     = "urcscon3_philly";
     
+
     public function __construct(){
         if(!isset($this->db)){
             // Connect to the database

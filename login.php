@@ -1,6 +1,7 @@
 <?php
-require_once "connect-db.php";
 session_start();
+require_once "connect-db.php";
+
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
@@ -89,7 +90,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($connection);
 }
-?>
 
 
 
@@ -97,7 +97,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 
-<?php include 'inc/html-top.inc'; ?>
+
+ include 'inc/html-top.inc'; ?>
 <main>
 <h2>Please Login:</h2>
 <!-- <form>

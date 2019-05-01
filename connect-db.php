@@ -1,6 +1,6 @@
 <?php
 // Database Variables (edit with your own server information)
-$server = "localhost";
+$server = 'localhost';
 $user = 'urcscon3_philly';
 $pass = 'coffee1N';
 $db = 'urcscon3_philly';

@@ -1,13 +1,10 @@
-
-
 <?php
-// connect to the database
-include('connect-db.php');
-
-
 // Initialize the session
 session_start();
- 
+// connect to the database
+
+
+
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
@@ -49,9 +46,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </div>
 
 
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+
 <script>
-
-
 $(document).ready(function(){
     $('.editBtn').on('click',function(){
         //hide edit span
@@ -82,17 +84,16 @@ $(document).ready(function(){
                     trObj.find(".editSpan.full_name").text(response.data.full_name);
                     trObj.find(".editSpan.location").text(response.data.location);
                     trObj.find(".editSpan.email").text(response.data.email);
-                    trObj.find(".editSpan.importantfactor").text(response.data.importantfactor);
                     trObj.find(".editSpan.mostlikedpark").text(response.data.mostlikedpark);
+                    trObj.find(".editSpan.importantfactor").text(response.data.importantfactor);
                     trObj.find(".editSpan.preserve").text(response.data.preserve);
 
                     trObj.find(".editInput.full_name").text(response.data.full_name);
                     trObj.find(".editInput.location").text(response.data.location);
                     trObj.find(".editInput.email").text(response.data.email);
-                    trObj.find(".editInput.importantfactor").text(response.data.importantfactor);
                     trObj.find(".editInput.mostlikedpark").text(response.data.mostlikedpark);
+                    trObj.find(".editInput.importantfactor").text(response.data.importantfactor);
                     trObj.find(".editInput.preserve").text(response.data.preserve);
-                    
 
                     trObj.find(".editInput").hide();
                     trObj.find(".saveBtn").hide();
@@ -135,15 +136,13 @@ $(document).ready(function(){
     });
 });
 </script>
-<main>
-<h2>Survey</h2>
 <?php
 //load and initialize database class
 require_once 'DB.class.php';
 $db = new DB();
 
-//get survey from database
-$survey = $db->getRows('survey',array('order_by'=>'id DESC'));
+//get users from database
+$users = $db->getRows('survey',array('order_by'=>'id DESC'));
 
 //get status message from session
 if(!empty($sessData['status']['msg'])){
@@ -169,11 +168,11 @@ if(!empty($sessData['status']['msg'])){
                     </tr>
                 </thead>
                 <tbody id="userData">
-                    <?php if(!empty($survey)): foreach($survey as $user): ?>
+                    <?php if(!empty($users)): foreach($users as $user): ?>
                     <tr id="<?php echo $user['id']; ?>">
                         <td><?php echo $user['id']; ?></td>
                         <td>
-                            <span class="editSpan fname"><?php echo $user['full_name']; ?></span>
+                            <span class="editSpan full_name"><?php echo $user['full_name']; ?></span>
                             <input class="editInput full_name form-control input-sm" type="text" name="full_name" value="<?php echo $user['full_name']; ?>" style="display: none;">
                         </td>
                         <td>
@@ -197,7 +196,7 @@ if(!empty($sessData['status']['msg'])){
                             <input class="editInput preserve form-control input-sm" type="text" name="preserve" value="<?php echo $user['preserve']; ?>" style="display: none;">
                         </td>
                         <td>
-                        <div class="btn-group btn-group-sm">
+                            <div class="btn-group btn-group-sm">
                                 <button type="button" class="btn btn-sm btn-default editBtn" style="float: none;"><span class="glyphicon glyphicon-pencil"></span></button>
                                 <button type="button" class="btn btn-sm btn-default deleteBtn" style="float: none;"><span class="glyphicon glyphicon-trash"></span></button>
                             </div>
@@ -206,7 +205,7 @@ if(!empty($sessData['status']['msg'])){
                         </td>
                     </tr>
                     <?php endforeach; else: ?>
-                    <tr><td colspan="8">No user(s) found......</td></tr>
+                    <tr><td colspan="5">No user(s) found......</td></tr>
                     <?php endif; ?>
                 </tbody>
             </table>
