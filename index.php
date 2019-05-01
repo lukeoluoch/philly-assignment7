@@ -6,25 +6,25 @@
 	  <a href="images/yosemite-slide.jpg" target="_blank">
 	    <img src='images/yosemite-slide.jpg' alt="Yosemite">
 	    <span>
-	      
+
 	    </span>
 	  </a>
 	  <a href="images/yellowstone-slide.jpg" target="_blank">
 	    <img src='images/yellowstone-slide.jpg' alt="Yellowstone">
 	    <span>
-	      
+
 	    </span>
 	  </a>
 	  <a href="images/grandcanyon-slide.jpg" target="_blank">
 	    <img src='images/grandcanyon-slide.jpg' alt="Grand Canyon">
 	    <span>
-	      
+
 	    </span>
 	  </a>
 	  <a href="images/everglades-slide.jpg" target="_blank">
 	    <img src='images/everglades-slide.jpg' alt="Everglades">
 	    <span>
-	      
+
 	    </span>
 	  </a>
 	</div>
