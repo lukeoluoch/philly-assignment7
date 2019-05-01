@@ -1,7 +1,7 @@
 
 <?php include 'inc/html-top.inc'; ?>
 <main>
-<h2>Question 1</h2>
+<h2 class="top-header">Question 1</h2>
 <p>What national park do you like the most and why?</p>
 <form action="thank-you.php" method="post">
     Favourite park:<br>
@@ -44,8 +44,7 @@
 </form>
 <p>This survey is used for research purpose only. All private information would be protected.</p>
 </main>
-<?php
-include "inc/footer.inc"
-?>
+<?php include 'inc/scripts.inc'; ?>
+<?php include "inc/footer.inc" ?>
 </body>
 </html>

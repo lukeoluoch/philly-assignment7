@@ -1,7 +1,7 @@
 <?php include 'inc/html-top.inc'; ?>
 <main>
 <section>
-    <h2>Yosemite</h2>
+    <h2 class="top-header">Yosemite</h2>
     <p>Yosemite National Park is an American national park located in the
         western Sierra Nevada of Central California, bounded on the southeast by Sierra National
         Forest and on the northwest by Stanislaus National Forest. The park is managed by the National Park
@@ -51,9 +51,7 @@
 </section>
 </main>
 
-
-<?php
-include "inc/footer.inc"
-?>
+<?php include 'inc/scripts.inc'; ?>
+<?php include "inc/footer.inc" ?>
 </body>
 </html>

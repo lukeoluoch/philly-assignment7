@@ -22,11 +22,17 @@ p {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 45px;
+	color: #ffdaaa;
+}
+
+h1 a {
+	color: #ffdaaa;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 35px;
+	margin-bottom: 5px;
 }
 
 h3 {
@@ -108,7 +114,7 @@ Layout styles : for the sections/areas
   	margin-top: 50px;
 }
 
-aside {
+nav {
 	display: flex;
 	flex-direction: row;
 	/*flex-basis: 20px;*/
@@ -145,16 +151,15 @@ nav a {
 
 }
 
-header, aside, footer, main {
+header, nav, footer, main {
 	background-color: #bc8134;/*#4c2b00;*/
 	color: #ffdaaa;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0;
 }
 
-footer {
-	/*display: flex;*/
+main, footer {
+	padding: 0px 40px 10px 40px;
 }
 
 footer a {
@@ -256,6 +261,11 @@ h3 a{
 	padding: 0px;
 }
 
+.top-header {
+	margin-top: 0;
+	padding-top: 30;
+}
+
 /*FORM - Adapted from form options for Pure by Yahoo!*/
 
 /*.pure-form input[type="text"], .pure-form input[type="email"] {
@@ -320,8 +330,8 @@ h3 a{
 State styles
 ***************** */
 
-.button-imp:hover {
-	background-color: #f1f196;
+.button-dif:hover {
+	background-color: #7d5d3b;
 }
 
 .button:hover {
@@ -332,7 +342,7 @@ State styles
 	color: brown;
 }
 
-header h1:hover {
+header h1 a:hover {
 	color: #7d5d3b;
 }
 
@@ -353,9 +363,13 @@ header h1:hover {
 	color: #F6EDE2;
 }
 
-nav li:hover {
-	background-color: #7d5d3b;
+.is-current {
+	background-color: #ffffff;
 }
+
+/*nav li:hover {
+	background-color: #7d5d3b;
+}*/
 
 /** {
 	border-style: solid;

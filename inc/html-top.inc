@@ -13,17 +13,15 @@
 <!--    The top left of the z pattern-->
 <div class="row">
 	<header>
-		<h1>National Park Survey</h1>
+		<h1><a href="index.php">National Park Survey</a></h1>
 	</header>
 	<!--    The top right of the z pattern-->
-	<aside>
-		<nav class="">
-		    <ul class="">
-		        <a class="" href="index.php"><li class="button">Home</li></a>
-		        <a class="" href="descriptions.php"><li class="button">Description</li></a>
-		        <a class="" href="national-park.php"><li class="button">National Parks</li></a>
-		        <a class="" href="survey.php"><li class="button-dif">Survey</li></a>
-		    </ul>
-		</nav>
-	</aside>
+	<nav class="">
+	    <ul class="">
+	        <a class="" href="index.php"><li class="button">Home</li></a>
+	        <a class="" href="descriptions.php"><li class="button">Description</li></a>
+	        <a class="" href="national-park.php"><li class="button">National Parks</li></a>
+	        <a class="" href="survey.php"><li class="button-dif">Survey</li></a>
+	    </ul>
+	</nav>
 </div>
