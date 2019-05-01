@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta lang="en">
-    <title>Description</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--    content taken from-->
-<!--    https://npansw.org/what-we-do/why-are-national-parks-important/-->
-</head>
-<h1>Description</h1>
+<?php include 'inc/html-top.inc'; ?>
+<!-- <h1>Description</h1>
 <body class="container">
 <nav class="navbar  navbar-expand-lg navbar-light bg-light">
     <ul class="navbar-nav">
@@ -17,7 +8,8 @@
         <li class="nav-item"><a class="nav-link" href="national-park.php">National Parks</a> </li>
         <li class="nav-item"><a class="nav-link" href="survey.php">Survey</a> </li>
     </ul>
-</nav>
+</nav> -->
+<main>
 <h2>Why Are National Parks Important</h2>
 <p>National parks protect the best of our natural heritage: stunning landscapes, extraordinary wildlife and majestic forests.Together with other protected areas they form the basis
     of our economic and social wellbeing, attract millions of visitors annually, and help to protect Australia’s unique wildlife by acting as a refuge for threatened species.
@@ -54,6 +46,7 @@
     Children in particular display long-term benefits of playing outdoors. In addition to the obvious health and wellbeing benefits our national parks bring, they also assist us in less obvious ways,
     such as acting as natural buffers against extreme weather events, helping to control our climate, providing us with clean water,
     improving food security and serving as an important resource for the pharmaceutical industry.</p>
+</main>
 <?php
 include "inc/footer.inc"
 ?>
